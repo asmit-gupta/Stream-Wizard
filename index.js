@@ -50,7 +50,7 @@ io.on('connection', socket => {
     socket.on('binarystream', stream => {
         console.log('Binary Stream Incomming...')
         ffmpegProcess.stdin.write(stream, (err)=> {{
-            console.Console.log('error occured in stream!');
+            console.log('error occured in stream!');
         }})
     })
 })

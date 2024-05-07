@@ -9,6 +9,10 @@ RUN /usr/bin/apt-get update && \
 
 WORKDIR /home/app
 
+COPY package*.json ./
+
+RUN npm install
+
 RUN npm i -g nodemon
 
 CMD nodemon index.js
